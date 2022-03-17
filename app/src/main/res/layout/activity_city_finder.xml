@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242343"
+    tools:context=".cityFinder">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/search_city"
+        android:gravity="center"
+        android:inputType="textAutoCorrect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="동/읍/면"
+        android:background="@drawable/edittext_design"
+        android:imeOptions="actionGo"
+        android:textColor="#B8A1A1"
+        android:textColorHint="#D5B7B7"
+        android:textSize="20dp">
+
+
+    </EditText>
+
+
+</RelativeLayout>

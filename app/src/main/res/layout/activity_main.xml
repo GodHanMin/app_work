@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F18D58"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/sunicon"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_launcher_background"
+        >
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:layout_above="@id/cityFinder">
+
+        <TextView
+            android:id="@+id/ultraviolet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="20dp"
+            android:text="자외선 지수 : 0"
+            android:textColor="#225D8F"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/weatherCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30sp"
+            android:text="----------"
+            android:textColor="#ffff"
+            android:gravity="center"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/cityname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="30sp"
+            android:text="광주시 광남동"
+            android:textColor="#3C4087"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/cityFinder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/buttondesign">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="자외선 지수 알아보기 "
+            android:textColor="#342759"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
